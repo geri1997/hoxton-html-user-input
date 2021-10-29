@@ -56,6 +56,13 @@ button{
     background-image: linear-gradient(to right, #bc58d6, #5f9fec);
       
 }
+input:valid{
+    background-color:  rgba(126, 252, 0, 0.459);
+}
+
+input:focus:invalid{
+    border: 2px solid rgb(252, 71, 0);
+}
 button img{
     width: 20px;
     height: 1rem;
@@ -118,9 +125,7 @@ select:focus{
 textarea:focus{
     outline: none;
 }
-input[type="email"]{
-    
-}
+
 main::after {
     content: "";
     position: absolute;
