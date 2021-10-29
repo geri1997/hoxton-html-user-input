@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="stlye.css">
+
+</head>
+<body>
+    <section class="bgclr"></section>
+    <main>
+        <h1>Hey there!</h1>
+    <form action="thank-you.html">
+        <label for="">
+            What's your name?
+            <input required type="text" placeholder="Enter your name" name="name" id="">
+        </label>
+        <div class="mail"><label for="">
+            What's your email address?
+            <input type="email" required placeholder="Enter your email address" name="name" id="">
+        </label></div>
+        <label for="">
+            What services are you looking for?
+            <select name="services" required id="">
+                <optgroup>
+                    <option disabled selected value="">Choose a service</option>
+                    <option value="">placeholder1</option>
+                    <option value="">placeholder2</option>
+                </optgroup>
+            </select>
+        </label>
+        <label for="">
+            What is your budget?
+            <select name="services" required id="">
+                <option disabled selected value="">Select budget</option>
+                <option value="">placeholder1</option>
+                <option value="">placeholder2</option>
+            </select>
+        </label>
+        <label for="">
+            Anything else you'd like to tell us?
+            <textarea rows="3" name="" placeholder="Your message here..." id="" cols="30" rows="10"></textarea>
+        </label>
+        <label for="">
+            I agree with the T&Cs.
+            <input type="checkbox" required name="agree" id="">
+        </label>
+        <div class="submit"><button type="submit">
+            Submit → 
+        </button>
+    </div>
+    </form>
+    </main>
+</body>
+</html>
