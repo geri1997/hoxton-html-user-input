@@ -67,6 +67,25 @@ button img{
     width: 20px;
     height: 1rem;
 }
+input[type="checkbox"]{
+    transition-duration: 3s;
+    background: red;
+}
+input[type="checkbox"]:checked {
+box-shadow: 0 0 0 4px rgba(0, 128, 0, 0.432);  
+/* transform: rotate(360deg); */
+}
+/* input[type="checkbox"]:checked::after {
+content: "asdasd";} */
+select:valid {
+    background-color:  rgba(126, 252, 0, 0.459);
+  }
+  select:focus:invalid{
+    border: 2px solid rgb(252, 71, 0);
+
+  }
+
+
 section.bgclr{
     position: absolute;
 }
@@ -81,13 +100,44 @@ select{
     font-size: 20px;
     margin: 1.5rem 0rem;
 }
-optgroup { font-size:80px; }
+.mail div{
+    display:none;
+}
+input[type="email"]:focus:invalid + div{
+    display: block;
+    position: absolute;
+    z-index: 80;
+    bottom: 60%;
+    left: 100%;
+    align-content: center;
+    height: auto;
+    width: 200px;
+    background: white;
+    border: 1px solid plum;
+    padding: 1rem;
+    border-radius: 20px;
 
+}
+input[type="checkbox"]::after {
+    content: '💔';
+    line-height: 1;
+    vertical-align: top;
+    position: relative;
+    left: 1.5em;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: '❤️';
+  }
 
 input::placeholder {
     
     font-size: 17px;
     line-height: 3;
+}
+span{
+    display: block;
+    padding: 1rem;
 }
 /* .bgclr{
     width: 410px;

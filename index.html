@@ -14,25 +14,26 @@
         <h1>Hey there!</h1>
     <form action="thank-you.html">
         <label for="">
-            What's your name? min 1char
+            What's your name?*
             <input required type="text" placeholder="Enter your name" name="name" id="">
         </label>
         <div class="mail"><label for="">
-            What's your email address?
-            <input minlength="" type="email" required placeholder="Enter your email address" name="name" id="">
-        </label></div>
+            What's your email address?*
+            <input pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" minlength="" type="email" required placeholder="Enter your email address" name="name" id="">
+            <div>Use "@" and at least one dot(.) Or don't. I don't know how to stop you...yet. <span>PS: I learned how</span></div></label></div>
+        
         <label for="">
-            What services are you looking for?
+            What services are you looking for?*
             <select name="services" required id="">
-                <optgroup>
+                
                     <option disabled selected value="">Choose a service</option>
                     <option value="">placeholder1</option>
                     <option value="">placeholder2</option>
-                </optgroup>
+                
             </select>
         </label>
         <label for="">
-            What is your budget?
+            What is your budget?*
             <select name="services" required id="">
                 <option disabled selected value="">Select budget</option>
                 <option value="">placeholder1</option>
